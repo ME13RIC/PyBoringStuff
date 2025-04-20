@@ -1,8 +1,9 @@
 import random
 
 number_of_streaks = 0
+experiment_total = 1
 
-for experiment_no in range(1):
+for experiment_no in range(experiment_total):
 	th_list = []
 	for i in range(100):
 		t_or_h = random.randint(0,1)
@@ -25,5 +26,4 @@ for experiment_no in range(1):
 		if c == 'H':
 			streak6_h.append(c)
 
-print('Chance of streak: %s%%' % (number_of_streaks / 100))
-
+print('Chance of streak: %s%%' % (number_of_streaks / 100 / experiment_total))
